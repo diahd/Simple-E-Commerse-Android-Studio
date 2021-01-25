@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="50dp"
+        android:id="@id/img_profil"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="16dp"
+        tools:ignore="MissingClass" />
+
+    <TextView
+        android:id="@+id/txt_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_profil"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="70dp"
+        android:text="Urban Garden"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/money_white"
+            android:background="@drawable/buttonstyle2"
+            android:text="Pembayaran"
+            android:textAlignment="center"
+            android:padding="@dimen/small"
+            android:textColor="#fff"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/check_white"
+            android:background="@drawable/buttonstyle2"
+            android:text="Dikemas"
+            android:textAlignment="center"
+            android:padding="@dimen/small"
+            android:textColor="#fff"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/transportation_white"
+            android:background="@drawable/buttonstyle2"
+            android:text="Dikirim"
+            android:textAlignment="center"
+            android:padding="@dimen/small"
+            android:textColor="#fff"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/star_white"
+            android:background="@drawable/buttonstyle2"
+            android:text="Penilaian"
+            android:textAlignment="center"
+            android:padding="@dimen/small"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="350dp"
+        android:text="Favorit saya"
+        android:background="@drawable/buttonstyle2"
+        android:textColor="#fff"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="390dp"
+        android:text="Voucher Saya"
+        android:background="@drawable/buttonstyle2"
+        android:textColor="#fff"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="430dp"
+        android:text="Pengaturan akun"
+        android:background="@drawable/buttonstyle2"
+        android:textColor="#fff"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="470dp"
+        android:text="Pusat Bantuan"
+        android:background="@drawable/buttonstyle2"
+        android:textColor="#fff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="600dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyle"
+            android:text="Login"
+            android:textColor="#FFF"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

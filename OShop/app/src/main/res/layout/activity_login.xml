@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#d2c4dd"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="800px"
+                android:layout_height="800px"
+                android:src="@drawable/logo" />
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24" />
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/lock_white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:paddingStart="@dimen/small"
+                android:text="MASUK"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonstyle2"
+                android:drawableLeft="@drawable/ic_baseline_send_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Lupa password? Atur ulang di sini" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layout_gravity="center"
+                android:text="Belum punya akun?" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonstyle2"
+                android:drawableLeft="@drawable/ic_baseline_send_24"
+                android:text="DAFTAR"
+                android:paddingStart="@dimen/small"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
